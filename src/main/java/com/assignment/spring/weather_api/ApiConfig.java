@@ -16,5 +16,5 @@ class ApiConfig {
     private String apiUrl;
 
     @NotBlank
-    private String apiId;
+    private String appId;
 }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  */
 @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
 public class ApiErrorException extends RuntimeException {
-    public ApiErrorException(final String details) {
-        super(details);
+    public ApiErrorException(final Exception e) {
+        super(e);
     }
 }
