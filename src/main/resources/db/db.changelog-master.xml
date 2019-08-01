@@ -5,6 +5,6 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 
-    <include file="db/changelog/create-weather-table.xml"/>
+    <include file="db/create-weather-table.xml"/>
 
 </databaseChangeLog>

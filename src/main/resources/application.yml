@@ -1,13 +1,12 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/weather
     username: sa
     password: password
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   liquibase:
-    change-log: classpath:/db/changelog/db.changeLog-master.xml
+    change-log: classpath:db/db.changelog-master.xml
 open-weather-api:
   api-url: 'http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={appid}'
-  app-id: '42e345e60ddc56114f6144a5a633e983'
+  app-id: 'Your Key'
